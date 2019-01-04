@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcfcfc;
+  color: #595959;
+  font-family: 'Open Sans', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+    margin-bottom: 0px
+}
+
+ul {
+    padding-left:0px;
+}
+
+.btn-primary {
+    background-color: #E5B500;
+    border-color: #E5B500;
+}
+
+.movieCard {
+    margin-bottom: 40px
+}
+
+.movieCard img {
+    width:342px;
+    height:511px;
+    border: #d3d3d3 solid 1px;
+    border-bottom:0px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 5px 0px;
+    border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cardDetails {
+    border: #d3d3d3 solid 1px;
+    border-top: 0px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 5px 0px;
+    padding: 15px;
+    margin:auto;
+    width:342px;
+    height:135px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.movieTitle {
+    font-size:18px;
+}
+
+.releaseDate {
+    color: #b3b3b3;
+}
+
+.reviews i {
+    color: #E5B500;
+    margin-right: 5px
+}
+
+.pageLink {
+    display: inline-block;
+    border: #d3d3d3 solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px 0px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pageLink button {
+    border:none;
+    padding: 0px;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+.pageLink:hover{
+    background-color: #80a6c2;
+    color:white; 
+}
+
+.pageLink.active {
+    background-color: #4A81A9;
+    color: white;
+    cursor: default;
+}
+
+.pageLink.active button{
+    color:white;
+}
