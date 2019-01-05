@@ -29,9 +29,9 @@ The tricky part was truncating that pagination link for very large number of res
 Another little hiccup I ran into when implementing pagination was that for page numbers past 1000, the API gives you an error: 'page must be less than or equal to 1000'. Basically when a user clicks on the page link for say page 5, my app sends an API request with the query and page number as parameters. The API actually won't let you request anything greater than 1000 for the page parameter. So on my app, I limit the max page number to be 1000 (even though there might be more results than that) to prevent the user from encountering this error.
     
 ### Other Little Things I Encountered
-- Generating API calls are different in React. Before I had always been using JQuery AJAX calls for those requests. But I learned the JQuery and React don't really mix, so I used fetch instead.
+- Generating API calls are different in React. Before I had always been using JQuery AJAX calls for those requests. But I learned that JQuery and React don't really mix, so I used fetch instead.
 - Some of the movie results didn't have movie posters, so I had to make a placeholder movie poster for those results
-- Not all movie posters are the same size so I had to force the width and height for all img elements to be the same size so the movie cards would all look uniform (Side note: I noticed the movie posters from foreign countries were a different size. All the movie posters from American films seems to be a standard size.)
+- Not all movie posters are the same size so I had to force the width and height for all img elements to be the same size so the movie cards would all look uniform (Side note: I noticed the movie posters from foreign countries were a different size. All the movie posters from American films seem to be a standard size.)
 - Some movie titles were pretty long so I had handle truncating the titles so the movie cards would be uniform size
 
 ## Future Improvements
