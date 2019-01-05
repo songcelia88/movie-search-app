@@ -28,7 +28,7 @@ class MovieCard extends React.Component {
 
         return (
             <div className="col-md-4 movieCard">
-                <img src={this.props.imgUrl}></img>
+                <img src={this.props.imgUrl} alt={movieTitle}></img>
                 <div className="cardDetails">
                     <p className="movieTitle"><strong>{movieTitle}</strong></p>
                     <p className="releaseDate">{this.props.releaseDate}</p>
@@ -238,6 +238,12 @@ class App extends React.Component {
                 <div className="row" style={{marginTop: '40px', textAlign:'center'}}>
                     {cards}
                 </div>
+                <div className="row" style={{marginTop: '40px', textAlign:'center'}}>
+                    <div className="col-sm-12" style={{textAlign:'center', marginTop: '20px'}}>
+                        <p>Images and Movie info taken from <a href="https://www.themoviedb.org/documentation/api">TMDB</a></p>
+                    </div>
+                </div>
+
             </div>
         );
     }
